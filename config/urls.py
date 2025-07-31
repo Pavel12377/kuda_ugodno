@@ -21,6 +21,7 @@ from django.urls import include, path
 urlpatterns = [
     path("api/", include("hotels.urls")),
     path("api/", include("type_of_food.urls")),
+    path("api/", include("hotel_rooms.urls")),
     path("admin/", admin.site.urls),
     path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
 ]

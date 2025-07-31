@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "hotels.apps.HotelsConfig",
     "type_of_food.apps.TypeOfFoodConfig",
+    "hotel_rooms.apps.HotelRoomsConfig",
 ]
 
 MIDDLEWARE = [
