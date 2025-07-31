@@ -1,0 +1,17 @@
+# Игнорировать папки и файлы
+__pycache__/
+*.py[cod]
+*.log
+*.sqlite3
+.env
+.venv/
+venv/
+
+# Игнорировать файлы IDE
+.idea/
+.vscode/
+*.swp
+
+# Игнорировать временные файлы
+temp/
+*.tmp
