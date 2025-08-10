@@ -13,3 +13,27 @@ class Hotel(models.Model):
 
     class Meta:
         ordering = ("id",)
+
+
+class TypeAccommodation(models.Model):
+    hotel_name = models.ForeignKey(Hotel, on_delete=models.CASCADE)
+    hotel = models.BooleanField(
+        default=False,
+        verbose_name="Отель",
+    )
+    hostel = models.BooleanField(
+        default=False,
+        verbose_name="Хостел",
+    )
+    villa = models.BooleanField(
+        default=False,
+        verbose_name="Вилла",
+    )
+    apartments = models.BooleanField(
+        default=False,
+        verbose_name="Апартаменты",
+    )
+    guest_house = models.BooleanField(
+        default=False,
+        verbose_name="Гостевой дом",
+    )

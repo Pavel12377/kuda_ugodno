@@ -13,3 +13,63 @@ class HotelRoom(models.Model):
 
     class Meta:
         ordering = ("id",)
+
+
+class ListCategoryRoom(models.Model):
+    room_category = models.ForeignKey(HotelRoom, on_delete=models.CASCADE)
+    standard = models.BooleanField(
+        default=False,
+        verbose_name="Standard",
+    )
+    single_room = models.BooleanField(
+        default=False,
+        verbose_name="Single Room",
+    )
+    double_room = models.BooleanField(
+        default=False,
+        verbose_name="Double Room",
+    )
+    twin_room = models.BooleanField(
+        default=False,
+        verbose_name="Twin Room",
+    )
+    triple_room = models.BooleanField(
+        default=False,
+        verbose_name="Triple Room",
+    )
+    family_room = models.BooleanField(
+        default=False,
+        verbose_name="Family Room",
+    )
+    superior_room = models.BooleanField(
+        default=False,
+        verbose_name="Superior Room",
+    )
+    deluxe_room = models.BooleanField(
+        default=False,
+        verbose_name="Deluxe Room",
+    )
+    studio = models.BooleanField(
+        default=False,
+        verbose_name="Studio",
+    )
+    suite = models.BooleanField(
+        default=False,
+        verbose_name="Suite",
+    )
+    junior_suite = models.BooleanField(
+        default=False,
+        verbose_name="Junior Suite",
+    )
+    residence = models.BooleanField(
+        default=False,
+        verbose_name="Residence",
+    )
+    royal_suite = models.BooleanField(
+        default=False,
+        verbose_name="Royal Suite",
+    )
+    penthouse = models.BooleanField(
+        default=False,
+        verbose_name="Penthouse",
+    )
